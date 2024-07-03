@@ -50,6 +50,7 @@
 .aboutItem, .interestsItem, .contactItem {
     transition: all 0.2s;
     cursor: pointer;
+    color: black;
 }
 
 .aboutItem:hover {
@@ -72,6 +73,9 @@
     cursor: pointer;
     color: black;
 }
+
+
+
 
 @media (max-width: 640px) {
     .burgerMenu {
