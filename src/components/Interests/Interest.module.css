@@ -1,0 +1,113 @@
+.interestsContainer {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    padding: 8em 14em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #0055ff1a;
+}
+
+.interestsContainer ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1em; padding: 2em 0em  ;
+}
+
+.interestsContainer h2 {
+    color: #ececec;
+    width: 250px;
+    text-align: center;
+    border-radius: 1em;
+    box-shadow: 0px 2px 2px 2px #0055ff9d;
+    font-weight: normal;
+    font-size: 36px;
+    }
+    
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+        gap: 20px;
+        margin-top: 2em;
+        padding: 2em 20em;
+      } 
+
+      .iconContainer {
+        min-height: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+      }
+
+      .card {
+        background-color: #0055ff1a;
+        color: #ececec;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: .5em;
+        padding: 2em 2em;
+        border-radius: .5em;
+        max-width: 350px;
+        min-height: 300px;
+        box-shadow:inset 2px 2px 6px  #0055ff9d;
+      } 
+      .card p {
+        text-align: center;
+      }
+
+      .cardTitle {
+        font-weight: bold;
+        font-size: 24px;
+      }
+
+
+      @media (min-width: 1024px) {
+        .card {
+          width: 380px;
+         }
+      }
+
+      @media (min-width: 640px) and (max-width: 1024px) {
+        .card {
+         width: 280px;
+        }
+
+        .cardTitle {
+
+          font-size: 20px;
+        }
+      }
+
+
+      @media (max-width: 640px) { 
+
+        .interestsContainer {
+          width: 100%;
+          height: 100%;
+          min-height: 100vh;
+          padding: 8em 0em;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          background-color: #0055ff1a;
+      }
+
+        .grid {
+          grid-template-columns: repeat(1, 1fr);
+          grid-template-rows: repeat(1, auto);
+        }
+
+        .card {
+         width: 340px;
+          min-height: 300px;
+        }
+
+      }
